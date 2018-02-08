@@ -1,3 +1,4 @@
+
 #Deep Deterministic Policy Gradient (DDPG) with Numpy Only
 
 
@@ -18,6 +19,7 @@ In the following, the key steps and their corresponding code snippets are listed
 a_t = actor.predict(np.reshape(s_t,(1,3)), ACTION_BOUND, target=False)+1./(1.+i+j)
 ```
 ####2) Execute action a\_t and observe reward r\_t and observe new state s\_{t+1}
+
 <img src="images/new_state.gif" alt="Drawing" style="width: 150px;"/>
 
 ```
@@ -26,7 +28,9 @@ s_t_1, r_t, done, info = env.step(a_t[0])
 ####3) Create and sample from replay buffer
 
 <img src="images/sample_from_buffer.gif" alt="Drawing" style="width: 150px;"/>
+
 ####4) Set y_i according to the following equation:
+
 <img src="images/y_i.gif" alt="Drawing" style="width: 300px;"/>
 
 ```
@@ -41,12 +45,14 @@ for i in range(len(batch)):
 ```
 
 ####5) Update the critic network by the loss function
+
 <img src="images/Q_loss.gif" alt="Drawing" style="width: 200px;">
 
 ```
 loss += critic.train(states_t, actions, y)
 ```
 ####6) Update the actor policy using the sampled policy gradient:
+
 <img src="images/update_policy.gif" alt="Drawing" style="width: 400px;">
 
 which needs the input of  
