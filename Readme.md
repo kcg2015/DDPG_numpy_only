@@ -78,6 +78,7 @@ actor.train(states_t, dQ_da, ACTION_BOUND)
 ```
 
 ####7) Update target networks
+
 <img src="images/tgt_update.gif" alt="Drawing" style="width: 200px;">
 
 ```
