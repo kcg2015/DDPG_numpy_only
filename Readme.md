@@ -10,14 +10,14 @@ In the following, the key steps and their corresponding code snippets are listed
 
 1) Select action a\_t according to current policy and exploration noise
 
-<img src="images/a_t.gif" alt="Drawing" style="width: 150px;"/>
+<img src="images/a_t.gif" alt="Drawing" style="width: 100px;"/>
 
 ```
 a_t = actor.predict(np.reshape(s_t,(1,3)), ACTION_BOUND, target=False)+1./(1.+i+j)
 ```
 2) Execute action a\_t and observe reward r\_t and observe new state s\_{t+1}
 
-<img src="images/new_state.gif" alt="Drawing" style="width: 150px;"/>
+<img src="images/new_state.gif" alt="Drawing" style="width: 100px;"/>
 
 ```
 s_t_1, r_t, done, info = env.step(a_t[0])
