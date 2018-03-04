@@ -94,8 +94,8 @@ The critic network is implemented in ```critic_net.py ```. We note that we follo
 
 <img src="images/pendulum_reward_episode.png" alt="Drawing" style="width: 400px;">  
 
-##Acknowledgement 
-In the process of the coding, I am also informed and inspired by the coding practice, style, technique in the following Github repository (https://github.com/yanpanlau/DDPG-Keras-Torcs, http://cs231n.github.io/assignments2017/assignment2/).
+## Acknowledgement 
+In the process of the coding, I am informed and inspired by the coding practice, style, technique in the following Github repository (https://github.com/yanpanlau/DDPG-Keras-Torcs, http://cs231n.github.io/assignments2017/assignment2/).
         
 
 
