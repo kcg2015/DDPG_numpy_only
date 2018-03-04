@@ -50,7 +50,7 @@ loss += critic.train(states_t, actions, y)
 ```
 6) Update the actor policy using the sampled policy gradient:
 
-<img src="images/update_policy.gif" alt="Drawing" style="width: 400px;">
+<img src="images/update_policy.gif" alt="Drawing" style="width: 200px;">
 
 which needs the input of  
 
